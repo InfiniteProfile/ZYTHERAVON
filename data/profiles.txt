@@ -1,0 +1,7 @@
+# Curated profiles. Format: $ID$NAME$IMAGE_URL$PROFILE_URL$
+# IMAGE_URL and PROFILE_URL may be empty. Lines starting with # are ignored.
+# An ID listed here replaces the generated profile with that ID.
+$1$Zytheravon Origin$$$
+$2$Nyx Valtor$$$
+$7$Kael Rhoden$$$
+$1000$Vireon Dusk$$$

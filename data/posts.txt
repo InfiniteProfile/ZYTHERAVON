@@ -1,0 +1,4 @@
+# Format: $PROFILE_ID$POST_CONTENT$   (one line per post; several lines may share an ID)
+$1$The first identity in the universe. Every ID after it is another door.$
+$1$Search any number, of any length. If it is a positive whole number, a profile exists there.$
+$2$Signal received. Orbit steady.$

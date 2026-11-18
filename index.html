@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050506">
+<title>ZYTHERAVON — One universe. Infinite identities.</title>
+<meta name="description" content="ZYTHERAVON is an endless profile discovery platform. Browse, search by exact ID, and open any profile.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23050506'/%3E%3Cpath d='M8 9h16L10 23h14' fill='none' stroke='%23ff2442' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <button class="brand" id="brand" type="button" aria-label="ZYTHERAVON, scroll to top">
+    <span class="mark" aria-hidden="true">Z</span>
+    <span class="brand-text"><b>ZYTHERAVON</b><small>One universe. Infinite identities.</small></span>
+  </button>
+  <div class="tools">
+    <form class="search" id="searchForm" role="search" autocomplete="off">
+      <button class="icon-btn" id="searchBtn" type="button" aria-label="Search by profile ID" aria-expanded="false">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input id="searchInput" type="text" inputmode="numeric" pattern="[0-9]*" placeholder="Profile ID" aria-label="Profile ID" spellcheck="false" autocapitalize="off" autocorrect="off" wrap="off">
+      <button class="icon-btn clear" id="clearBtn" type="button" aria-label="Clear search" hidden>&times;</button>
+    </form>
+    <button class="pill" id="randomBtn" type="button">Random profile</button>
+  </div>
+</header>
+
+<main>
+  <section id="result" class="result" aria-live="polite" hidden></section>
+  <div id="feed" class="grid" aria-label="Profiles"></div>
+  <div id="sentinel" aria-hidden="true"></div>
+</main>
+
+<footer class="status" aria-live="off">
+  <span class="dot" id="dot"></span>
+  <span id="count">0</span> profiles loaded
+</footer>
+
+<div id="dlg" class="dlg" role="dialog" aria-modal="true" aria-labelledby="dlgName" hidden>
+  <div class="dlg-bg" id="dlgBg"></div>
+  <article class="dlg-card" id="dlgCard"></article>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
